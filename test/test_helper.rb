@@ -48,6 +48,20 @@ FAKE_CLIENT_NODE_HASH = {
   version: '0.9.5.2-06ca164',
 }.freeze
 
+FAKE_ARTIST_NODE_HASH = {
+  Directory: FakeNode.new(
+    rating_key: '10',
+    guid: 'e30ffb5c-e9cf-48c7-ae27-4b2bbc074181',
+    type: 'artist',
+    title: 'Pantera',
+    summary: "Can't you see that I'm easily bothered by persistence",
+    index: '1',
+    rating: '9.3',
+    thumb: '/library/metadata/9/thumb?t=1323220437',
+    added_at: '1323213639',
+    updated_at: '1323220437')
+}.freeze
+
 FAKE_SHOW_NODE_HASH = {
   Directory: FakeNode.new(
     rating_key: '9',

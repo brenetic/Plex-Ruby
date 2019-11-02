@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = 'plex-ruby'
   s.version     = Plex::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Eric Koslow']
+  s.authors     = ['Eric Koslow'] # Thanks, dude
   s.email       = ['ekoslow@gmail.com']
   s.homepage    = 'https://github.com/ekosz/Plex-Ruby'
   s.summary     = 'Plex Media Server APIs in easy ruby code'

@@ -60,13 +60,10 @@ module Plex
     end
 
     def parse_directory
-      case node.attr('type')
-      when 'show'
-        Plex::Show.new( parent, node.attr('key')[0..-10] ) # Remove /children
-      else
-        raise "Unsupported Directory type #{node.attr('type')}"
-      end
+      type = node.attr('type').capitalize
+      Object.const_get("Plex::#{type}").new(parent, node.attr('key')[0..-10])
+    rescue NameError
+      raise "Unsupported Directory type #{node.attr('type')}"
     end
   end
 end
-
