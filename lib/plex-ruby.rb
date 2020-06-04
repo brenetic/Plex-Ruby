@@ -25,7 +25,7 @@ module Plex
     headers = {}
     headers["X-Plex-Token"] = config.auth_token if config.auth_token
 
-    super(url, headers)
+    URI(url).open(headers)
   end
 
   # Converts camel case names that are commonly found in the Plex APIs into
