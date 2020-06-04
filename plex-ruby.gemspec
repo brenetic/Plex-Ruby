@@ -12,8 +12,6 @@ Gem::Specification.new do |s|
   s.summary     = 'Plex Media Server APIs in easy ruby code'
   s.description = 'Extracts the Plex Media Server API into easy to write ruby code'
 
-  s.rubyforge_project = 'plex-ruby'
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
